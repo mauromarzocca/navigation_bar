@@ -1,5 +1,5 @@
-@import "reset.scss";
-@import "variables.scss"
+@import "reset";
+@import "variables";
 
 .header {
 
@@ -9,7 +9,6 @@
     background-color: $secondary-color;
     height: $header-height;
     padding: 1.5rem;
-
     a {
         text-decoration: none;
         color: black;
@@ -20,7 +19,7 @@
         align-items: center;
         gap: .8rem;
 
-        .logo {
+        .Logo {
             font-size: 1.5rem;
             color: black;
         }
@@ -37,9 +36,19 @@
         }
     }
 
-    &-center {}
+    &-center {
+        .material-icons.expand-more {
+            opacity: .5;
+            font-size: 18px;
+            margin: 0 5px;
+        }
+
+        & > ul {
+            
+        }
+    }
 
     &-end {}
 }
 
-@import "src/_responsive.scss";
+@import "responsive";
