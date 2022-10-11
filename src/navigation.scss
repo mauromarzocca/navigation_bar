@@ -1,4 +1,45 @@
 @import "reset";
-@import "variables";
+@import "variables"
 
-@import "responsive"
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    height: $header-height;
+    padding: 1.5rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &-start {
+        display: flex;
+        align-items: center;
+        gap: .8rem;
+
+        .logo {
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .mobile-btn {
+            display: none;
+            color: black;
+            padding: .5rem;
+            
+            .material-icons {
+                font-size: 2rem;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &-center {}
+
+    &-end {}
+}
+
+@import "responsive";
